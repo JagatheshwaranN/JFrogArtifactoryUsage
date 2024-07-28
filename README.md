@@ -89,8 +89,8 @@ Scroll down and you can see the Generate Settings button, click on and your sett
 
 Step 8
 ======
-You can see two options Configure and Deploy. Click on Deploy and copy the distributionManagement details shown. Go back to the Framework which you want to
-push, open the pom.xml and add the copied content after the dependencies section.
+You can see two options Configure and Deploy. Click on Deploy and copy the Distribution Management details shown. Go back to the Framework which you want 
+to push, open the pom.xml and add the copied content after the dependencies section.
 
 Step 9
 ======
@@ -99,5 +99,5 @@ cmd line, type mvn deploy and it will create the snapshot and push it to JFrog A
 
 Step 10
 =======
-Go to the Child Project, where you want to use the Core Automation Framework and copy the distributionManagement details as below in the pom.xml. So, when
-you run  the project as mvn test, your test will run by downloading the core automation framework code from the JFrog Artifactory website.
+Go to the Child Project, where you want to use the Core Automation Framework and copy the Distribution Management details as below in the pom.xml. So, 
+when you run  the project as mvn test, your test will run by downloading the core automation framework code from the JFrog Artifactory website.
