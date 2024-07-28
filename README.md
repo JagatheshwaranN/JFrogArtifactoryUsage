@@ -1,5 +1,45 @@
-Intro
-=====
+Understanding Our Repository Structure and Artifact Management
+==============================================================
+Challenge statement
+========================
+Scenario: A Core Automation team develops the Core automation framework and which is used by different products team to test their application 
+using the Core automation framework as their base framework.
+
+Solution: Core Automation Framework can be created and pushed to some central storage, which can be used as a central repository to store these 
+libraries, ensuring consistent access and version control. Also, the product teams can download and use the Core Automation Framework from 
+central repository.
+
+Introduction
+============
+This repo aims to clarify the structure of our repository and the role of JFrog Artifactory in managing our automation frameworks.
+
+CoreAutomationFramework
+=======================
+The CoreAutomationFramework is the foundation for all automation efforts within our organization. It houses essential modules and components that
+are universally applicable across different product teams. Think of it as a shared toolkit providing building blocks for automation development.
+
+TestCoreAutomationFramework
+===========================
+To illustrate how the CoreAutomationFramework can be used in a real-world scenario, we've created the TestCoreAutomationFramework project. This 
+project represents a typical product team's setup, demonstrating how to incorporate the core modules into their specific automation needs.
+
+Centralized Artifact Management with JFrog Artifactory
+======================================================
+To ensure consistency and efficiency, we've integrated JFrog Artifactory as our centralized repository. The CoreAutomationFramework code is uploaded
+to Artifactory, making it readily accessible to all product teams. By downloading the necessary components from Artifactory, teams can avoid redundant
+efforts and maintain a unified automation approach.
+
+Benefits of This Structure
+==========================
+1. Code Reusability: Promotes code sharing and reduces development time.
+2. Consistency: Ensures uniformity in automation practices across teams.
+3. Efficiency: Streamlines the process of accessing and utilizing core modules.
+4. Centralized Management: Simplifies version control and updates of core components.
+
+By adopting this repository structure and leveraging JFrog Artifactory, you can establish a robust framework for automation development and collaboration.
+
+JFrog Intro
+===========
 JFrog is a comprehensive platform for managing software development artifacts and pipelines. It offers tools to automate and streamline various
 stages of the software development lifecycle, from building and testing to deployment and distribution.
 
@@ -37,17 +77,8 @@ remediation recommendations.
 Scenario: A company needs to distribute its software to customers through different channels (e.g., web downloads, app stores).
 Solution: JFrog Distribution can be used to manage software releases, create distribution channels, and deliver updates to end-users efficiently.
 
-Usage Guide Lines for Test Automation
-=====================================
-Scenario: A Core Automation team develops the Core automation framework and which is used by different products team to test their application 
-using the Core automation framework as their base framework.
-
-Solution: Core Automation Framework can be created and pushed to JFrog Artifactory, which can be used as a central repository to store these 
-libraries, ensuring consistent access and version control. Also, the product teams can download and use the Core automation framework from 
-JFrog Artifactory.
-
-Steps to be followed to achieve the above use case
-==================================================
+Steps to be followed to achieve the above (Managing Dependencies with Artifactory) use case
+===========================================================================================
 Step 1
 ======
 Navigate to the below link and create your own account with JFrog with Google / Custom account.
