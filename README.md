@@ -15,25 +15,25 @@ Example Use Cases
 To better understand how JFrog can be used, let's explore some common scenarios:
 
 1. Managing Dependencies with Artifactory
-=========================================
+
 Scenario: A development team uses various open-source libraries in their project.
 Solution: Artifactory can be used as a central repository to store these libraries, ensuring consistent access and version control. It can also be 
 configured to proxy external repositories, reducing network load and improving performance.
 
 2. Automating Builds and Deployments with Pipelines
-===================================================
+
 Scenario: A team wants to automate the build, test, and deployment process for their application.
 Solution: JFrog Pipelines can be used to create complex CI/CD pipelines that trigger builds, run tests, and deploy artifacts to different environments
 (development, staging, production).
 
 3. Ensuring Software Quality with Xray
-======================================
+
 Scenario: A security team needs to identify vulnerabilities in the project's dependencies.
 Solution: Xray can scan artifacts for known vulnerabilities, license compliance issues, and other security risks, providing detailed reports and 
 remediation recommendations.
 
 4. Distributing Software Packages with Distribution
-===================================================
+
 Scenario: A company needs to distribute its software to customers through different channels (e.g., web downloads, app stores).
 Solution: JFrog Distribution can be used to manage software releases, create distribution channels, and deliver updates to end-users efficiently.
 
@@ -89,8 +89,8 @@ Scroll down and you can see the Generate Settings button, click on and your sett
 
 Step 8
 ======
-You can see two options Configure and Deploy. Click on Deploy and copy the details shown. Go back to the Framework which you want to push, open the pom.xml
-and add the copied content after the dependencies section.
+You can see two options Configure and Deploy. Click on Deploy and copy the distributionManagement details shown. Go back to the Framework which you want to
+push, open the pom.xml and add the copied content after the dependencies section.
 
 Step 9
 ======
@@ -99,13 +99,5 @@ cmd line, type mvn deploy and it will create the snapshot and push it to JFrog A
 
 Step 10
 =======
-Go to the Child Project, where you want to use the Core Automation Framework and copy the distribution details as below in the pom.xml. So, when you run 
-the project as mvn test, your test will run by downloading the core automation framework code from the JFrog Artifactory website.
-
-<distributionManagement>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>a0khijsfypkn3-artifactory-primary-0-snapshots</name>
-        <url>https://learneveryday.jfrog.io/artifactory/core-automation-libs-snapshot-local</url>
-    </snapshotRepository>
-</distributionManagement>
+Go to the Child Project, where you want to use the Core Automation Framework and copy the distributionManagement details as below in the pom.xml. So, when
+you run  the project as mvn test, your test will run by downloading the core automation framework code from the JFrog Artifactory website.
