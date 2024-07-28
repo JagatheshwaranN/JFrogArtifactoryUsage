@@ -56,6 +56,19 @@ channels, and deliver updates to end-users efficiently.
 
 Usage Guide Lines for Test Automation
 =====================================
+
+Scenario: A Core Automation team develops the Core automation framework and which is used by
+different products team to test their application using the Core automation framework as their
+base framework.
+
+Solution: Core Automation Framework can be created and pushed to JFrog Artifactory, which can
+be used as a central repository to store these libraries, ensuring consistent access and version
+control. Also, the product teams can download and use the Core automation framework from JFrog
+Artifactory.
+
+Steps to be followed to achieve the above use case
+==================================================
+
 Step 1
 ======
 Navigate to the below link and create your own account with JFrog with Google / Custom account.
@@ -127,4 +140,3 @@ Artifactory website.
         <url>https://learneveryday.jfrog.io/artifactory/core-automation-libs-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
-
